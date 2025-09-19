@@ -5,15 +5,15 @@
 ### ✅ Prerequisites
 Make sure the following are installed:
 
-```bash
+**bash**
 java -version   # Java 8+ (JDK)
 mvn -version    # Maven
 docker --version # Docker
-📂 Step 1: Project Structure
-Your project should look like this:
 
-css
-Copy code
+**📂 Step 1: Project Structure
+Your project should look like this:**
+
+
 dock-Jen/
  ├── Dockerfile
  ├── Jenkinsfile (optional for later)
@@ -23,18 +23,21 @@ dock-Jen/
      └── main/
          └── java/
              └── com/demo/DemoApp.java
-💻 DemoApp.java Example
-java
-Copy code
+**             
+💻 DemoApp.java Example**
+**java**
+
 package com.demo;
 public class DemoApp {
     public static void main(String[] args) {
         System.out.println("Hello from Docker + Maven Demo App!");
     }
 }
-⚙️ pom.xml – Full, Corrected Version
-xml
-Copy code
+
+
+**⚙️ pom.xml – Full, Corrected Version**
+**xml**
+
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
@@ -92,37 +95,41 @@ Copy code
         </plugins>
     </build>
 </project>
-🐳 Step 2: Dockerfile
-dockerfile
-Copy code
+
+
+**🐳 Step 2: Dockerfile**
+**dockerfile**
+
 FROM openjdk:11-jre-slim
 WORKDIR /app
 COPY target/maven-docker-demo-1.0-SNAPSHOT.jar app.jar
 ENTRYPOINT ["java", "-jar", "app.jar"]
-🚀 Step 3: Build and Run Locally
-1. Build the JAR with Maven
 
-bash
-Copy code
+**🚀 Step 3: Build and Run Locally**
+**1. Build the JAR with Maven**
+
+**bash**
+
 cd /path/to/dock-Jen
 mvn clean package
 Check the JAR:
 
-bash
-Copy code
+**bash**
+
 ls target/
 # You should see: maven-docker-demo-1.0-SNAPSHOT.jar
 2. Build Docker Image
 
-bash
-Copy code
+**bash**
+
 docker build -t demo-app-image .
 3. Run Docker Container
 
-bash
-Copy code
+**bash**
+
 docker run --rm demo-app-image
-🎉 Output
-csharp
-Copy code
+
+**🎉 Output**
+
 Hello from Docker + Maven Demo App!
+
