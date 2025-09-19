@@ -133,3 +133,32 @@ docker run --rm demo-app-image
 
 Hello from Docker + Maven Demo App!
 
+
+**🔗 CI/CD with Jenkins**
+
+This project supports automated pipelines using Jenkins + Docker.
+
+Build
+
+Test
+
+Dockerize
+
+Deploy
+
+**📌 Requirements**
+
+Java 17+
+
+Maven 3.8+
+
+Docker & Docker Compose
+
+Jenkins (with Docker plugins)
+
+**✨ Author**
+
+👤 Rajat Jaiswal
+
+💻 Passionate about Cloud ☁, DevOps ⚙, and Backend 🚀
+
