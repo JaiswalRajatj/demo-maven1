@@ -138,27 +138,28 @@ Hello from Docker + Maven Demo App!
 
 This project supports automated pipelines using Jenkins + Docker.
 
-Build
-
-Test
-
-Dockerize
-
-Deploy
+* Build
+ 
+* Test
+ 
+* Dockerize
+ 
+* Deploy
 
 **📌 Requirements**
 
-Java 17+
-
-Maven 3.8+
-
-Docker & Docker Compose
-
-Jenkins (with Docker plugins)
+* Java 17+
+ 
+* Maven 3.8+
+ 
+* Docker & Docker Compose
+ 
+* Jenkins (with Docker plugins)
 
 **✨ Author**
 
 👤 Rajat Jaiswal
 
 💻 Passionate about Cloud ☁, DevOps ⚙, and Backend 🚀
+
 
